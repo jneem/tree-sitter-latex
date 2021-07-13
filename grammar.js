@@ -634,10 +634,10 @@ function defEnv (mode, label, { name, beginParameters, endParameters, contents, 
 
 const root = 'grammar'
 
-console.log(`Loading grammar definitions...`)
+console.warn(`Loading grammar definitions...`)
 
 for (const filePath of readdir.sync(root, { deep: true, filter: '**/*.js' })) {
-  console.log(`  ${path.join(root, filePath)}`)
+  console.warn(`  ${path.join(root, filePath)}`)
   const m = require(path.join(__dirname, root, filePath))
 
   for (const mode in m) {

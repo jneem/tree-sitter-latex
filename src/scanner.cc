@@ -774,3 +774,9 @@ void tree_sitter_latex_external_scanner_destroy(void *payload) {
   delete scanner;
 }
 }
+
+//#include "scanner_keywords.cc"
+//#include "scanner_names.cc"
+//#include "scanner_environments.cc"
+//#include "scanner_control_sequences.cc"
+//#include "catcode.cc"
