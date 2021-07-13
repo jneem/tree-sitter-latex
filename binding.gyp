@@ -7,7 +7,7 @@
         "src"
       ],
       "sources": [
-        "src/binding.cc",
+        "bindings/node/binding.cc",
         "src/catcode.cc",
         "src/parser.c",
         "src/scanner_control_sequences.cc",
